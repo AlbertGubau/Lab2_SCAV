@@ -24,7 +24,7 @@ print("############################## RESIZE VIDEO PROGRAM #####################
 print("")
 print("The input video file must be an mp4 in the same folder as this python script, ")
 print("and the name of it needs to be 'BBB'. Please do not specify the format of the output ")
-print("If we ask you for the name of the output, just write the name,")
+print("If we ask you for the name of the input/output, just write the name,")
 print("for example, if you want the name to be frog, just write frog, do not write frog.mp4 ")
 print("in the output name.")
 print("")
@@ -32,13 +32,19 @@ print("")
 # Input for the option
 
 try:
+
+    # Input filename
+    input_name = str(input("Choose the input file that you want to resize: "))
+
+    if not os.path.exists(input_name + ".mp4"):
+        input_name = "BBB"
+
+    print(input_name)
     width = int(input("Choose what resize do you want:"
                       "\nWrite the width here (e.g 1280): "))
 
     height = int(input("\nWrite the height here (e.g 720): "))
 
-    # Input filename
-    input_name = "BBB"
 
     # We check that the output name chosen by the user is not the same as the input name
     boolean = False

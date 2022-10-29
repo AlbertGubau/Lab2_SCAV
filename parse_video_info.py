@@ -5,7 +5,7 @@ import os
 def parse_video_info(in_file):
 
     # ffmpeg -i displays a lot of info, so we save it in a .txt
-    command_line = 'ffmpeg -i ' + str(in_file) + ' BBB.mp4 2> full_result.txt'
+    command_line = 'ffmpeg -i ' + str(in_file) + ' 2> full_result.txt'
     os.system(command_line)
 
     print("")
