@@ -25,6 +25,6 @@ def ex2(in_file):
     # Remove temporary files that we will use to generate the video with multiple audio tracks
     os.remove('output.mp3')
     os.remove('output.aac')
-    
+
 
 ex2("BBB")
