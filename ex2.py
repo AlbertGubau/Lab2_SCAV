@@ -27,4 +27,5 @@ def ex2(in_file):
     os.remove('output.aac')
 
 
+# Call the function of the exercise
 ex2("BBB")

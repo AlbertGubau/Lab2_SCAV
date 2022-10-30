@@ -3,6 +3,7 @@ import os
 
 
 def ex4(in_file):
+
     # ffmpeg -i displays a lot of info, so we save it in a .txt
     command_line = 'ffmpeg -i ' + str(in_file) + '.mp4 2> full_result_ex4.txt'
     os.system(command_line)

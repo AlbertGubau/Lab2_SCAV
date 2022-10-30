@@ -32,14 +32,12 @@ print("")
 # Input for the option
 
 try:
-
     # Input filename
     input_name = str(input("Choose the input file that you want to resize: "))
 
     if not os.path.exists(input_name + ".mp4"):
         input_name = "BBB"
 
-    print(input_name)
     width = int(input("Choose what resize do you want:"
                       "\nWrite the width here (e.g 1280): "))
 

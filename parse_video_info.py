@@ -12,8 +12,9 @@ def parse_video_info(in_file):
 
     with open('full_result.txt') as result:  # We read the lines of the saved txt document with the info of the video
         lines = result.readlines()
-    for line in lines:
-        if line.__contains__("Duration") or line.__contains__("Stream"):  # These are our important flags
+
+    for line in lines:  # These are our important flags
+        if line.__contains__("Duration") or line.__contains__("Stream") or line.__contains__(" Video "):
             print(line)
 
     os.remove("full_result.txt")  # We remove the info result
