@@ -1,4 +1,4 @@
-# This file is able to resize the BBB video, Albert Gubau NIA: 229416
+# This file is able to resize the BBB video given any input, Albert Gubau NIA: 229416
 import os
 
 
@@ -44,7 +44,6 @@ try:
                       "\nWrite the width here (e.g 1280): "))
 
     height = int(input("\nWrite the height here (e.g 720): "))
-
 
     # We check that the output name chosen by the user is not the same as the input name
     boolean = False
