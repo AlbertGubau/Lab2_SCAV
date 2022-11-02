@@ -59,7 +59,7 @@ class Lab2SCAV:
                 print(
                     "########################## VIDEO BROADCASTING STANDARDS (Task 4) ################################")
                 print("")
-                self.in_ex4 = input("Choose the file that you want, in the same folder and without format "
+                self.in_ex4 = input("Choose the file that you want, in the same folder and without format\n"
                                     "(e.g to use frog.mp4 that is in the same folder as this script just write frog): ")
                 self.ex4()
 
